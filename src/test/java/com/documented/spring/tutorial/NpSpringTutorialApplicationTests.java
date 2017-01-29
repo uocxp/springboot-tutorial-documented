@@ -1,4 +1,4 @@
-package com.naturalprogrammer.spring.tutorial;
+package com.documented.spring.tutorial;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
