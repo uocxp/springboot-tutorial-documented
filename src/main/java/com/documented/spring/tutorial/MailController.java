@@ -5,12 +5,13 @@ import javax.annotation.Resource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
  * The @Controller annotation will mark your class as a web controller that has a @RequestMapping and a
  * @ResponseBody. All this means is that when your web application is running, it will accept requests from the 
- * http://localhost:8080/ URL and you should get some response back, such as the famous “Hello World” message.
+ * http://localhost:8080/ URL and you should get some response back.
  *
  */
 @RestController
