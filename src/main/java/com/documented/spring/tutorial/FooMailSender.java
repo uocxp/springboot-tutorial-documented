@@ -15,14 +15,14 @@ import org.springframework.stereotype.Component;
  * not be able to annotate those with @Component, because we’ll not have access to their source code.
  * In such case, we could use Java configuration classes.
  */
-@Component("mockMailSender")
-@Qualifier("mock") // name for autowired
-public class MockMailSender implements MailSender {
-    private static final Log log = LogFactory.getLog(MockMailSender.class);
+@Component
+@Qualifier("fooMailSender")
+public class FooMailSender implements MailSender {
+    private static final Log log = LogFactory.getLog(FooMailSender.class);
 
     @Override
     public void send(String to, String subject, String body) {
-        log.info("@@@ Sending mail to " + to);
+        log.info("@@@ Sending foo mail to " + to);
         log.info("@@@ Subject: " + subject);
         log.info("@@@ Body: " + body);
     }

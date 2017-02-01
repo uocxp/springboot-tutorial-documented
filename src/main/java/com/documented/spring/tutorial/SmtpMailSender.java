@@ -5,8 +5,8 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-@Component("smtpMailSender")
-@Qualifier("smtp") // name for autowired
+@Component
+@Qualifier // name for autowired
 public class SmtpMailSender implements MailSender {
     private static final Log log = LogFactory.getLog(SmtpMailSender.class);
 
